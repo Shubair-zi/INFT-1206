@@ -61,3 +61,24 @@ h2 {
 section h2 + p {
   text-indent: 2rem;
 }
+/* Link styling */
+a:link { color: #aa6666; }
+a:visited { color: #884444; }
+a:hover, a:focus { text-decoration: none; }
+a:focus { outline: none; }
+
+a[href^="http"] {
+  background: url('external-link-52.png') no-repeat right center;
+  background-size: 1em;
+  padding-right: 1.3em;
+}
+
+/* List styling */
+ul, ol {
+  line-height: 1.7;
+  margin: 1em 0;
+}
+
+ul {
+  list-style-type: square;
+}
