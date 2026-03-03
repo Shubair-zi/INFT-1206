@@ -1,4 +1,5 @@
 /* General setup */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Merriweather:wght@400&display=swap');
 
 * {
   box-sizing: border-box;
@@ -81,4 +82,30 @@ ul, ol {
 
 ul {
   list-style-type: square;
+}
+/* Nav styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 0;
+  width: 100%;
+  background-color: #aa6666;
+  color: white;
+  margin-bottom: 5px;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #884444;
+  outline: none;
 }
