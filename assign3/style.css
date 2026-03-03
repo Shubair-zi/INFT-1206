@@ -1,0 +1,36 @@
+/* Biography Page Stylesheet
+   Assignment 3 - Part 1
+   MDN CSS Styling Basics - Styling a Biography Page */
+
+html {
+  background-color: white;
+}
+
+body {
+  font: 1.2em / 1.5 system-ui;
+}
+
+h1 {
+  color: #375e97;
+}
+
+.job-title {
+  font-style: italic;
+  color: #555;
+}
+
+a:link {
+  color: #375e97;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: #ff3300;
+}
