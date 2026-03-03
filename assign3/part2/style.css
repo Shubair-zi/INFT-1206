@@ -1,0 +1,63 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 980px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+main {
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+/* header and footer */
+
+header {
+  border-bottom: 5px solid #aa6666;
+}
+
+footer {
+  border-top: 5px solid #aa6666;
+}
+
+footer p {
+  text-align: center;
+}
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Merriweather:wght@400&display=swap');
+
+body {
+  font-family: 'Merriweather', Georgia, serif;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+h1, h2, nav a {
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  letter-spacing: 0.03em;
+}
+
+section h2 + p {
+  text-indent: 2rem;
+}
