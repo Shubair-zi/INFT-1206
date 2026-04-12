@@ -1,0 +1,19 @@
+/*
+Name: Shubair Azizi
+File: style.css
+Date: 11 April 2026
+Styles for the bouncing balls page.
+*/
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: white;
+  position: absolute;
+  margin: 10px;
+}
