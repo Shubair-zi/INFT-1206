@@ -146,14 +146,21 @@ div.comments {
   padding-top: 10px;
 }
 
-div.show-hide {
+button.show-hide {
   width: 150px;
   padding: 10px;
   background-color: #a30000;
   color: white;
+  border: none;
   cursor: pointer;
   text-align: center;
   margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+button.show-hide:focus {
+  outline: 3px solid #000;
+  outline-offset: 2px;
 }
 
 div.comment-wrapper {

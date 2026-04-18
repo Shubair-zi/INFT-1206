@@ -5,6 +5,7 @@ Date: 17 April 2026
 A wildlife website article about bears with accessibility issues to be fixed.
 -->
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +28,7 @@ A wildlife website article about bears with accessibility issues to be fixed.
     <li><a href="#">Blog</a></li>
   </ul>
   <form class="search">
-    <input type="search" name="q" placeholder="Search query">
+    <input type="search" name="q" placeholder="Search query" aria-label="Search through site content">
     <input type="submit" value="Go!">
   </form>
 </nav>
@@ -84,6 +85,7 @@ A wildlife website article about bears with accessibility issues to be fixed.
     <audio controls>
       <source src="media/bear.mp3" type="audio/mp3">
       <source src="media/bear.ogg" type="audio/ogg">
+      <p>It looks like your browser doesn't support HTML5 audio players. Here is a <a href="media/bear.mp3">direct link to the audio file</a> instead.</p>
     </audio>
 
     <aside>
@@ -93,19 +95,19 @@ A wildlife website article about bears with accessibility issues to be fixed.
     </aside>
 
     <div class="comments">
-      <div class="show-hide" tabindex="">Show comments</div>
+      <button class="show-hide">Show comments</button>
 
       <div class="comment-wrapper">
 
         <h2>Add comment</h2>
         <form class="comment-form">
           <div class="flex-pair">
-            <label>Your name:</label>
-            <input type="text" name="name" placeholder="Enter your name">
+            <label for="name">Your name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
           </div>
           <div class="flex-pair">
-            <label>Your comment:</label>
-            <input type="text" name="comment" placeholder="Enter your comment">
+            <label for="comment">Your comment:</label>
+            <input type="text" name="comment" id="comment" placeholder="Enter your comment">
           </div>
           <div>
             <input type="submit" value="Submit comment">
