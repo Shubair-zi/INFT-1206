@@ -19,13 +19,13 @@ body {
 
 /* Layout */
 
-div.header, div.footer {
+header, footer {
   background-color: #a30000;
   color: #fff;
   padding: 10px 20px;
 }
 
-div.nav {
+nav {
   background-color: #eee;
   padding: 5px 20px;
   display: flex;
@@ -33,7 +33,7 @@ div.nav {
   height: 50px;
 }
 
-div.main {
+main {
   padding: 20px;
   display: flex;
   align-items: flex-start;
@@ -52,7 +52,7 @@ div.secondary {
   padding: 10px;
 }
 
-div.aside {
+aside {
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
   padding: 10px 20px;
@@ -61,22 +61,22 @@ div.aside {
 
 /* nav styles */
 
-div[class="nav"] ul {
+nav ul {
   padding: 0;
   list-style-type: none;
   display: flex;
 }
 
-div[class="nav"] ul li {
+nav ul li {
   margin-right: 20px;
 }
 
-div[class="nav"] ul a:link, div[class="nav"] ul a:visited {
+nav ul a:link, nav ul a:visited {
   text-decoration: none;
   color: #000;
 }
 
-div[class="nav"] ul a:hover {
+nav ul a:hover {
   text-decoration: underline;
 }
 
@@ -96,7 +96,7 @@ form.search input[type="submit"] {
 
 /* header and footer */
 
-div.header h1, div.footer p {
+header h1, footer p {
   margin: 0;
 }
 
