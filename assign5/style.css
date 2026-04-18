@@ -1,0 +1,186 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+div.header, div.footer {
+  background-color: #a30000;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+div.nav {
+  background-color: #eee;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+div.main {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+div.article {
+  flex: 4;
+  padding-right: 30px;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+div.secondary {
+  flex: 1;
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+
+div.aside {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  padding: 10px 20px;
+  margin: 20px 0;
+}
+
+/* nav styles */
+
+div[class="nav"] ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+div[class="nav"] ul li {
+  margin-right: 20px;
+}
+
+div[class="nav"] ul a:link, div[class="nav"] ul a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+div[class="nav"] ul a:hover {
+  text-decoration: underline;
+}
+
+form.search {
+  width: 300px;
+  margin-left: auto;
+  display: flex;
+}
+
+form.search input[type="search"] {
+  flex: 3;
+}
+
+form.search input[type="submit"] {
+  flex: 1;
+}
+
+/* header and footer */
+
+div.header h1, div.footer p {
+  margin: 0;
+}
+
+/* article */
+
+div.article img {
+  width: 100%;
+}
+
+/* table styles */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table td {
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+}
+
+/* secondary styles */
+
+div.secondary ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+div.secondary ul li {
+  margin-bottom: 10px;
+}
+
+div.secondary ul a:link, div.secondary ul a:visited {
+  color: #a30000;
+}
+
+/* comments */
+
+div.comments {
+  border-top: 2px solid #aaa;
+  padding-top: 10px;
+}
+
+div.show-hide {
+  width: 150px;
+  padding: 10px;
+  background-color: #a30000;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div.comment-wrapper {
+  display: none;
+}
+
+form.comment-form {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.flex-pair {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.flex-pair label {
+  width: 120px;
+}
+
+.flex-pair input {
+  flex: 1;
+  padding: 5px;
+}
+
+ul.comment-container {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.comment-container li {
+  border: 1px solid #aaa;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* font color for article — poor contrast */
+
+div.article {
+  color: #777;
+}
